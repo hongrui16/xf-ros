@@ -267,7 +267,7 @@ int main(int argc, char* argv[])
 	int ret = MSP_SUCCESS;
 	int upload_on =	1; /* whether upload the user word */
 	/* login params, please do keep the appid correct */
-	const char* login_params = "appid = 58249817, work_dir = .";
+	const char* login_params = "appid = 5a1faeac, work_dir = .";
 	int aud_src = 0; /* from mic or file */
 
 	/*

@@ -169,7 +169,7 @@ int main(int argc, char* argv[])
 {
 	int			ret						=	MSP_SUCCESS;
 	int			upload_on				=	1; //是否上传用户词表
-	const char* login_params			=	"appid = 58249817"; // 登录参数，appid与msc库绑定,请勿随意改动
+	const char* login_params			=	"appid = 5a1faeac"; // 登录参数，appid与msc库绑定,请勿随意改动
 
 
 	/*

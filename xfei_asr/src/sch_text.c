@@ -15,7 +15,7 @@
 
 int main(int argc, char* argv[])
 {
-	const char*  login_params	 =	"appid = 58249817"; // 登录参数，appid与msc库绑定,请勿随意改动
+	const char*  login_params	 =	"appid = 5a1faeac"; // 登录参数，appid与msc库绑定,请勿随意改动
 	const char*  rec_text        =   NULL;
 	unsigned int str_len         =   0;
 	int	         ret		     =	 MSP_SUCCESS;

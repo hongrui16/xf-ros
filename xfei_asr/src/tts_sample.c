@@ -136,7 +136,7 @@ int text_to_speech(const char* src_text, const char* des_path, const char* param
 int main(int argc, char* argv[])
 {
 	int         ret                  = MSP_SUCCESS;
-	const char* login_params         = "appid = 58249817, work_dir = .";//登录参数,appid与msc库绑定,请勿随意改动
+	const char* login_params         = "appid = 5a1faeac, work_dir = .";//登录参数,appid与msc库绑定,请勿随意改动
 	/*
 	* rdn:           合成音频数字发音方式
 	* volume:        合成音频的音量
@@ -171,6 +171,7 @@ int main(int argc, char* argv[])
 	{
 		printf("text_to_speech failed, error code: %d.\n", ret);
 	}
+
 	printf("合成完毕\n");
 
 exit:

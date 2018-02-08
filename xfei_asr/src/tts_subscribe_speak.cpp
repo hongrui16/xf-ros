@@ -168,7 +168,7 @@ void xfcallback(const std_msgs::String::ConstPtr& msg)
   unlink("/tmp/cmd");  
   mkfifo("/tmp/cmd", 0777);  
   popen("mplayer -quiet -slave -input file=/tmp/cmd 'tts_sample.wav'","r");
-  sleep(30);
+  sleep(5);
   printf("Mplayer Run Success\n");
 
 }
@@ -189,7 +189,7 @@ void toExit()
 int main(int argc, char* argv[])
 {
 	int         ret                  = MSP_SUCCESS;
-	const char* login_params         = "appid = 58249817, work_dir = .";//登录参数,appid与msc库绑定,请勿随意改动
+	const char* login_params         = "appid = 5a1faeac, work_dir = .";//登录参数,appid与msc库绑定,请勿随意改动
 	/*
 	* rdn:           合成音频数字发音方式
 	* volume:        合成音频的音量
@@ -219,7 +219,7 @@ int main(int argc, char* argv[])
 
     ros::init(argc,argv,"xf_tts");
     ros::NodeHandle n;
-    ros::Subscriber sub =n.subscribe("xfwords",1000,xfcallback);
+    ros::Subscriber sub =n.subscribe("xfwords",1,xfcallback);
     ros::spin();
 
 
